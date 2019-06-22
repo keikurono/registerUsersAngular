@@ -1,0 +1,29 @@
+<fieldset>
+  <h2 class="fs-title">Creación de Cliente</h2>
+  <h3 class="fs-subtitle">Este es el paso 1</h3>
+  <input type="text" id="first_name" name="firstname" placeholder="First Name" />
+  <input type="text" id="last_name" name="lastname" placeholder="Last Name" />
+  <input type="number" id="yearsold" name="yearold" placeholder="Years Old" />
+  <input type="date" id="date_birth" name="birthdate" placeholder="" />
+  <button (click)="next()" id="next_btn0" name="next" class="next action-button">Submit</button>
+</fieldset>
+<fieldset>
+  <h2 class="fs-title">Lista de Clientes</h2>
+  <h3 class="fs-subtitle">Informacion general de clientes</h3>
+  Promedio de edades es: {{edadmedia}} <br/>
+  Desviación estandar: {{dstandar}}
+  <button (click)="previous()" id="prev_btn1" name="previous" class="previous action-button">Previous</button>
+  <button (click)="next()" id="next_btn1" name="next" class="next action-button">Next</button>
+</fieldset>
+<fieldset style="">
+  <h2 class="fs-title">Análisis de Cliente</h2>
+  <h3 class="fs-subtitle">Proyecciones del Cliente</h3>
+  <div style="text-align: left">
+    Nombre: {{user.first_name}}<br/>
+    Apellido: {{user.last_name}}<br/>
+    Edad: {{user.yearsold}}<br/>
+    Nacimiento: {{user.date_birth}}<br/>
+    Fallecimiento: {{date_dead}}<br/>
+  </div>
+  <button (click)="previous()" id="prev_btn2" name="previous" class="previous action-button">Previous</button>
+</fieldset>
